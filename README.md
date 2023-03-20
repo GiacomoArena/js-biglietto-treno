@@ -11,7 +11,8 @@ va applicato uno sconto del 40% per gli over 65.
 1. Chiedere per poi salvare in una variabile i chilometri che l'utente ha intenzione di percorrere
 2. Chiedere con un prompt l'etá dell'utente per poi salvarla in una variabile.
 
-3. creare una variabile che calcola il prezzo base del biglietto: 0.21 &euro; al Km * 
+3. creare una variabile che calcola il prezzo base del biglietto: 0.21 &euro; al Km 
+
 
 4. Se l'utente é minorenne applicare al calcolo del prezzo uno sconto del -20%
 
@@ -31,4 +32,30 @@ va applicato uno sconto del 40% per gli over 65.
 ```
 const age = prompt("Quanti anni hai?");
 
+```
+
+## punto n°  3
+
+```
+let prezzo = 0.21 * age;
+
+```
+
+## punto n°  4-5-6
+- in base all'etá il messaggio di output sullo schermo sará differente
+
+```
+
+if(age < 18){
+  prezzo -= (prezzo*20)/100;
+  document.getElementById('prezzo_biglietto').innerHTML = "Prezzo Under18: " + prezzo.toFixed(2) + "&euro;";
+}
+else if (age >= 65) {
+  prezzo -= (prezzo*40)/100;
+  document.getElementById('prezzo_biglietto').innerHTML = "Prezzo Over65: " + prezzo.toFixed(2) + "&euro;";
+}
+else {
+  document.getElementById('prezzo_biglietto').innerHTML =
+  "Prezzo Standard: " + prezzo.toFixed(2) + "&euro;";
+}
 ```
