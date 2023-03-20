@@ -8,9 +8,18 @@ va applicato uno sconto del 40% per gli over 65.
 
 
 ## Passaggi: 
-- Chiedere per poi salvare in una variabile i chilometri che l'utente ha intenzione di percorrere
-- Chiedere con un prompt l'etá dell'utente per poi salvarla in una variabile.
+1. Chiedere per poi salvare in una variabile i chilometri che l'utente ha intenzione di percorrere
+2. Chiedere con un prompt l'etá dell'utente per poi salvarla in una variabile.
 
-- Se l'utente é minorenne applicare al calcolo del prezzo uno sconto del -20%
+3. Se l'utente é minorenne applicare al calcolo del prezzo uno sconto del -20%
 
-- Se l'utente é invece un over 65 applicare al calcolo del prezzo uno sconto del 40%.
+4. Se l'utente é invece un over 65 applicare al calcolo del prezzo uno sconto del 40%.
+
+5. Stampare il risulatato a schermo 
+
+## punto n°  1
+```
+
+  const km = prompt("Ciao, quanti KM hai intenzione di percorrere?");
+
+```
